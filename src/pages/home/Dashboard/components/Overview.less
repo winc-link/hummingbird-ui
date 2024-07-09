@@ -1,0 +1,35 @@
+.overview {
+  &.ant-card .ant-card-grid {
+    &::before {
+      content: ' ';
+      display: inline-block;
+      border-left: 1px solid #eee;
+      min-height: 180px;
+      margin-bottom: -195px;
+      margin-left: -24px;
+    }
+  }
+}
+
+.overview-item {
+  min-height: 180px;
+}
+.overview-item__title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.overview-item__count {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.overview-item__info {
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+  color: #aaa;
+  &:last-child {
+    border-bottom: none;
+  }
+}

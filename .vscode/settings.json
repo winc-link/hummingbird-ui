@@ -1,0 +1,21 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "cSpell.words": [
+    "autotip",
+    "offpkg",
+    "pageable",
+    "removeable",
+    "tencent"
+  ],
+  "tslint.autoFixOnSave": false
+}

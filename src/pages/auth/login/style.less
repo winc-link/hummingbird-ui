@@ -1,0 +1,79 @@
+.login {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F5F5FA;
+  display: flex;
+  justify-content: center;
+}
+.login-content {
+  width: 50vw;
+  height: 30vw;
+  min-width: 800px;
+  min-height: 500px;
+  max-width: 1200px;
+  max-height: 600px;
+  // background-color: rgb(192, 194, 194);
+  align-self: center;
+  overflow: auto;
+  margin: 40px;
+}
+.login-content__left {
+  width: 50%;
+  height: 100%;
+  background-color: #232F3E;
+  float: left;
+  background-image: url('../../../assets/images/background.png');
+  background-repeat: no-repeat;
+  background-size: 354px 286px;
+  background-position: center 70%;
+}
+.login-content__leftTitle {
+  font-size: 20px;
+  color: #fefeff;
+  font-weight: 500;
+  margin: 10px 40px;
+}
+.login-content__img {
+  width: 400px;
+  margin-top: 70px;
+  margin-left: 50px;
+}
+.login-content__right {
+  width: 50%;
+  height: 100%;
+  background-color: #FBFBFB;
+  float: left;
+}
+.login-content__rightTitle {
+  text-align: center;
+  margin-top: 100px;
+  // font-weight: 600;
+}
+
+.login-form {
+  input, .ant-input-password {
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 0;
+    background-color: transparent;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .ant-input-affix-wrapper-focused {
+    box-shadow: none;
+  }
+}
+
+.login-copyright {
+  position: fixed;
+  left: 0;
+  bottom: 40px;
+  color: #ccc;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+}

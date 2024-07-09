@@ -1,0 +1,50 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "jsx": true,
+    "useJSXTextNode": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": ["standard", "standard-react"],
+  "plugins": ["@typescript-eslint"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "jsx-quotes": ["error", "prefer-double"],
+    "camelcase": "off",
+    "comma-dangle": ["error", "always-multiline"],
+    "no-control-regex": "off",
+    "n/no-callback-literal": "off",
+    "react/no-did-update-set-state": "off",
+    "react/jsx-fragments": ["error", "syntax"],
+    "react/jsx-wrap-multilines": ["error", { "declaration": "parens-new-line" }],
+    "operator-linebreak": ["error", "before"]
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "indent": "off",
+        "@typescript-eslint/indent": ["error", 2, { "SwitchCase": 1 }],
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          {
+            "vars": "all",
+            "args": "after-used",
+            "ignoreRestSiblings": false
+          }
+        ],
+        "react/prop-types": "off",
+        "react/jsx-no-target-blank": ["error", { "enforceDynamicLinks": "always" }]
+      }
+    }
+  ]
+}

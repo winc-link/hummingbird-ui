@@ -1,0 +1,29 @@
+{
+  "extends": "stylelint-config-standard",
+  "customSyntax": "postcss-less",
+  "rules": {
+    "indentation": 2,
+    "font-family-no-missing-generic-family-keyword": null,
+    "selector-class-pattern": null,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "for",
+          "function",
+          "if",
+          "each",
+          "include",
+          "mixin"
+        ]
+      }
+    ],
+    "no-descending-specificity": null
+  },
+  "ignoreFiles": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx"
+  ]
+}
