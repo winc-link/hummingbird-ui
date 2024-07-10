@@ -1,6 +1,6 @@
 import React from 'react'
 // import { MenuProps } from 'antd'
-import { DashboardOutlined, GlobalOutlined, FieldTimeOutlined, ApiOutlined, FunctionOutlined, BookOutlined } from '@ant-design/icons'
+import { DashboardOutlined, GlobalOutlined, FieldTimeOutlined, FunctionOutlined, BookOutlined } from '@ant-design/icons'
 
 import type { MenuItemType, SubMenuType } from 'antd/es/menu/hooks/useItems'
 
@@ -25,15 +25,15 @@ const menus = [
       { label: '我的驱动', key: '/gateway/my/drive' },
     ],
   },
-  {
-    label: '云插件',
-    key: '/cloud',
-    icon: <ApiOutlined />,
-    children: [
-      { label: '插件市场', key: '/cloud/service' },
-      { label: '我的插件', key: '/cloud/my/service' },
-    ],
-  },
+  // {
+  //   label: '云插件',
+  //   key: '/cloud',
+  //   icon: <ApiOutlined />,
+  //   children: [
+  //     { label: '插件市场', key: '/cloud/service' },
+  //     { label: '我的插件', key: '/cloud/my/service' },
+  //   ],
+  // },
   {
     label: '运维监控',
     key: '/monitor',

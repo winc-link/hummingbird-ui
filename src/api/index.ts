@@ -8,7 +8,7 @@ export { addThingModel, deleteThingModel, thingModelSystem, thingModelUnit } fro
 export { getDeviceProperty, getHistoryProperty, getDeviceEvent, getDeviceService } from './device-thingmodel'
 export { getDockerConfigs, addDockerConfigs, editDockerConfigs, deleteDockerConfigs } from './docker-configs'
 export { addDevices, getDevice, deleteDevices, bindDriver, unBindDriver, downloadTemplate } from './devices'
-export { getDeviceLibraries, addDeviceLibraries, editDeviceLibraries, deleteDeviceLibraries } from './device-libraries'
+export { getDeviceLibraries, addDeviceLibraries, editDeviceLibraries, deleteDeviceLibraries, getDriverMarket } from './device-libraries'
 export { iotPlatform, addProduct, productSync, allProductSync, getProductInfo, deleteProduct, getProductList } from './product'
 export { addDevice, editDevices, deleteDevice, deviceSync, deviceSyncSingle, getDeviceDetail, getDeviceStatusTemplate } from './device'
 

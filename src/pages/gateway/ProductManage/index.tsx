@@ -147,6 +147,7 @@ const ProductManage: React.FC<ProductManageProps> = () => {
           rowKey="id"
           size="small"
           columns={[
+            { title: '产品ID', key: 'id', dataIndex: 'id' },
             { title: '产品名称', key: 'name', dataIndex: 'name' },
             {
               title: '产品编号',

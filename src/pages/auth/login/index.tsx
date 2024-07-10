@@ -48,9 +48,8 @@ export default function login () {
     <div className="login">
       <div className="login-content">
         <div className="login-content__left">
-          <img className="ml20" style={{ marginTop: '40px' }} src={require('@/assets/images/logo.png')} alt="" />
-          <div className="login-content__leftTitle">
-            赢创万联 物联网平台
+          <div className="login-content__leftTitle" style={{ marginTop: '40px' }}>
+             蜂鸟物联网平台
           </div>
           {/* <img
             className="login-content__img"

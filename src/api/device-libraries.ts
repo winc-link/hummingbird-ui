@@ -1,5 +1,5 @@
 import { httpRequest } from '@/utils/request'
-import { TableRequestType, CommonResponse } from '@/types'
+import { TableRequestType, CommonResponse, TableReponseType } from '@/types'
 
 export interface SupportVersion {
   version: string
@@ -67,4 +67,12 @@ export function deleteDeviceLibraries (id: string) {
     url: `/api/v1/device-libraries/${id}`,
     method: 'delete',
   })
+}
+
+export function getDriverMarket<T> (params?: { name?: string; classify_id: string }) {
+  return httpRequest<any, CommonResponse<TableReponseType<T>>>({ url: '/api/v1/device-libraries?isAll=true&is_internal=true', params })
+}
+
+export function getDriveClassify<T> () {
+  return httpRequest<any, CommonResponse<TableReponseType<T>>>({ url: '/api/v1/driver-classify?isAll=true' })
 }
