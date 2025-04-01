@@ -1,6 +1,6 @@
 import React from 'react'
 // import { MenuProps } from 'antd'
-import { DashboardOutlined, GlobalOutlined, FieldTimeOutlined, FunctionOutlined, BookOutlined } from '@ant-design/icons'
+import { DashboardOutlined, GlobalOutlined, FieldTimeOutlined, BookOutlined } from '@ant-design/icons'
 
 import type { MenuItemType, SubMenuType } from 'antd/es/menu/hooks/useItems'
 
@@ -43,16 +43,16 @@ const menus = [
       { label: '告警中心', key: '/monitor/alarmCenter/list' },
     ],
   },
-  {
-    label: '高级能力',
-    key: '/advanced',
-    icon: <FunctionOutlined />,
-    children: [
-      { label: '资源管理', key: '/advanced/resource/manage' },
-      { label: '规则引擎', key: '/advanced/rule/engine' },
-      { label: '场景联动', key: '/advanced/scene/linkage' },
-    ],
-  },
+  // {
+  //   label: '高级能力',
+  //   key: '/advanced',
+  //   icon: <FunctionOutlined />,
+  //   children: [
+  //     { label: '资源管理', key: '/advanced/resource/manage' },
+  //     { label: '规则引擎', key: '/advanced/rule/engine' },
+  //     { label: '场景联动', key: '/advanced/scene/linkage' },
+  //   ],
+  // },
   {
     label: '工具与文档',
     key: '/documents/documents',
